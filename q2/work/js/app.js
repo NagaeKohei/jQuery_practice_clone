@@ -1,0 +1,12 @@
+$(function(){
+  //ボタン要素class=modal_open_buttonをクリックしバインドを行う
+  $(".modal_open_button").on("click",function(){
+    //非表示になっていたclass=modal_winをフェードインさせて表示
+    $(".modal_win").fadeIn();
+  });
+  //ボタン要素class=modal_close_buttonをクリックしバインドを行う
+  $(".modal_close_button").on("click",function(){
+    //表示されているclass=modal_winをフェードアウトさせて非表示
+    $(".modal_win").fadeOut();
+  });
+});
